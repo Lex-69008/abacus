@@ -5,8 +5,13 @@ class Compute:
         self.operator = operator
         self.operands = operands
 
-    def add(self):
-        pass
+    def multiply(self):
+        if self.operands is None:
+            return
+        product = 1
+        for item in self.operands:
+            product *= item
+        print(product)
 
     def subtract(self):
         pass
@@ -19,3 +24,4 @@ class Compute:
         for item in self.operands:
             sum *= item
         print(sum)
+
