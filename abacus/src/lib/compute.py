@@ -1,4 +1,4 @@
-# Exercise 1: Feature-Branch Work ow-Driven Delivery
+# Exercise 2: Examining Differences Between Files
 
 class Compute:
     def __init__(self, operator, operands):
@@ -14,11 +14,14 @@ class Compute:
         print(product)
 
     def subtract(self):
-        difference = 0
+        pass
+
+    def divide(self):
+        pass
+
+    def multiply(self):
+        sum  = 1
         for item in self.operands:
-            difference -= item
-        print(difference)
-    
-    def exponent(self):
-        num_exponent = self.operands[0] ** self.operands[1]
-        print(num_exponent)
+            sum *= item
+        print(sum)
+
